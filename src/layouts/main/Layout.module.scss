@@ -1,0 +1,15 @@
+.mainRoot {
+  display: flex;
+  height: 100vh;
+  background: #494ca2;
+}
+
+.mainContent {
+  background: #F0F1F4;
+  display: flex;
+  margin-top: 4px;
+  flex-direction: column;
+  padding: 0 10px 10px;
+  border-top-left-radius: 7px;
+  flex: 1;
+}
