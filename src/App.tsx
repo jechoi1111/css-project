@@ -3,13 +3,15 @@ import './App.css';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { MainLayout, PageLayout } from './layouts';
+import { MainLayout } from './layouts';
+import { CircleAnimationPage, HomePage } from './pages';
 
 function App() {
 	return (
 		<Routes>
-			<Route path="/" element={<MainLayout />}>
-				<Route path="/circle-animation" element={<PageLayout />} />
+			<Route element={<MainLayout />}>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/circle-animation" element={<CircleAnimationPage />} />
 			</Route>
 		</Routes>
 	);

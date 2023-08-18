@@ -2,6 +2,10 @@ import React from 'react';
 
 import styles from './PageLayout.module.scss';
 
-export const PageLayout = () => {
-	return <div className={styles.pageLayout}></div>;
+type PageLayoutProps = {
+	children: React.ReactNode;
+};
+
+export const PageLayout = ({ children }: PageLayoutProps) => {
+	return <div className={styles.pageLayout}>{children}</div>;
 };
