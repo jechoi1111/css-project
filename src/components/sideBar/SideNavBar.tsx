@@ -7,7 +7,6 @@ import styles from './SideNavBar.module.scss';
 export default function SideNavBar() {
 	const navigate = useNavigate();
 	const { pathname } = useLocation();
-	console.log('pathname', pathname);
 
 	return (
 		<div className={styles.sideNavBarWrapper}>
