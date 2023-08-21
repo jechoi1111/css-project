@@ -25,6 +25,14 @@ export default function SideNavBar() {
 					<i style={{ backgroundImage: `url(${ICON.circle_w})` }} />
 					Circle Animation
 				</li>
+				{/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
+				<li
+					onClick={() => navigate('/infinity-animation')}
+					className={pathname === '/infinity-animation' ? styles.active : ''}
+				>
+					<i style={{ backgroundImage: `url(${ICON.infinity})` }} />
+					Infinity Animation
+				</li>
 			</ul>
 		</div>
 	);
